@@ -15,4 +15,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>xcard-releases</id>
+      <name>xcard-releases</name>
+      <url>http://ec2-52-0-207-5.compute-1.amazonaws.com:8081/nexus/content/repositories/xcard-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <uniqueVersion>true</uniqueVersion>
+      <id>xcard-snapshot</id>
+      <name>xcard-snapshot</name>
+      <url>http://ec2-52-0-207-5.compute-1.amazonaws.com:8081/nexus/content/repositories/xcard-snapshot/</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
