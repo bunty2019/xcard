@@ -2,7 +2,7 @@ node ("maven-slave"){
    def mvnHome
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
-      git 'https://github.com/bunty2019/jenkins-pipeline.git'
+      git 'https://github.com/bunty2019/webwarsample.git'
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
       // **       in the global configuration.           
