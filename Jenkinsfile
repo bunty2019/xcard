@@ -1,5 +1,13 @@
+@Library('pipeline-library-demo')_
+
 node ("maven-slave"){
    def mvnHome
+   stage('testLibrary') {
+      echo 'Hello Demo World'
+
+      sayHello 'Dave'
+   }
+   
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
       git 'https://github.com/bunty2019/xcard.git'
