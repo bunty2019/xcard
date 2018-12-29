@@ -1,11 +1,23 @@
 @Library('pipeline-library-demo')_
 
+
+def say(String name = 'human') {
+  echo "Hello, ${name}."
+  echo "Hello, ${name}."
+}
+
 node ("maven-slave"){
    def mvnHome
    stage('testLibrary') {
       echo 'Hello Demo World'
 
-      sayHello 'Dave'
+      sayHello 'BSingh'
+   }
+   
+    stage('referenceLibrary') {
+      echo 'Hello Demo World'
+
+      say 'Bunty'
    }
    
    stage('Preparation') { // for display purposes
