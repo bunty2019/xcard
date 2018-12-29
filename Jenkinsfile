@@ -1,6 +1,6 @@
 node("maven-slave") {
  stage("stage1"){
-     echo "stage1 Hello World!" 
+     echo "stage1 Hello World! -- Jenkinsfile" 
      git 'https://github.com/bunty2019/jenkins-pipeline.git'
  }
   stage("stage2"){
